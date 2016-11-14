@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+body {
+	font-family: 'Open Sans', Sans-serif;
+}
+
+
+
+.header {
+	width: 100%;
+	height: 100%;
+	background-image: url(/img/header-bg.png);
+	background-size: cover;
+	background-position: center;
+
+	.top-menu {
+		padding: 10px 0;
+		background-color: rgba(255, 255, 255, .702);
+	}
+	.bottom-menu {
+		border-top: 1px solid #011627;
+		border-bottom: 1px solid #011627;
+	}
+
+	&-title {
+		.info {
+			margin-top: 40px;
+			color: #011627;
+			font-size: 18px;
+		}
+	}
+	&-callback {
+		text-align: center;
+		.phone {
+			color: #011627;
+			font-size: 24px;
+		}
+
+	}
+}
+
+
+
+.callback-button {
+	background-color: rgba(27, 154, 170, 1);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	width: 220px;
+	height: 50px;
+	border: none;
+}
+
+
+.menu-list {
+	margin: 10px 0;
+	.menu-item {
+		display: inline-block;
+		width: 160px;
+		border-left: 1px solid #011627;
+		text-align: center;
+		&:hover {
+			background-color: #011627;
+			margin-top: -20px;
+			margin-bottom: -20px;
+			margin-right: -20px;
+			height: 60px;
+			width: 180px;
+
+			& .item-link {
+				margin-left: -9px;
+				margin-top: 19px;
+				color: #fff;
+			}
+		}
+		.item-link {
+			margin-left: 15px;
+			font-size: 14px;
+			color: #011627;
+			text-transform: uppercase;
+		}
+	}
+}
