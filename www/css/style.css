@@ -4997,14 +4997,14 @@ body {
 .main-title {
   text-align: center;
   color: #fff;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 45px;
   margin-top: 150px; }
   .main-title-text {
     margin: 0px auto;
     margin-bottom: 15px;
     padding-top: 50px;
-    width: 752px;
+    width: 70%;
     background-image: url(/img/rectangle.png);
     background-position: center;
     background-size: 100% 100%;
@@ -5028,9 +5028,10 @@ body {
 .main-form {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  width: 960px;
+  width: 85%;
   margin: 0 auto;
-  padding: 15px 10px; }
+  padding: 15px 10px;
+  margin-bottom: 100px; }
   .main-form-title {
     color: #011627;
     font-weight: bold;
@@ -5039,6 +5040,80 @@ body {
     margin-bottom: 15px; }
     .main-form-title b {
       color: #1b9aaa; }
+  .main-form-descr {
+    font-size: 14px;
+    color: #011627;
+    margin-top: 15px; }
+
+.main-post-form input {
+  background: none;
+  border: 1px solid #1b9aaa;
+  width: 215px;
+  height: 50px;
+  color: #1b9aaa;
+  font-size: 16px;
+  text-align: center; }
+
+.steps {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  position: relative; }
+  .steps-item {
+    border: 1px solid #011627;
+    border-radius: 100px;
+    width: 165px;
+    height: 165px;
+    margin-right: 20px; }
+    .steps-item:last-child {
+      margin-right: 0; }
+  .steps-number {
+    position: absolute;
+    font-size: 14px;
+    z-index: 2;
+    color: #fff;
+    left: 47%; }
+  .steps-title {
+    position: absolute;
+    left: 38%;
+    top: -10px; }
+  .steps-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1b9aaa;
+    text-align: center;
+    margin-top: 42%; }
+    .steps-text b {
+      font-weight: bold; }
+
+.problems {
+  background-image: url(/img/problems-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  margin-bottom: 25px;
+  text-align: center; }
+  .problems-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px; }
+  .problems-item {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 260px;
+    width: 340px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px; }
+  .problems-img {
+    display: block;
+    margin: 20px auto; }
+  .problems-info {
+    font-weight: bold; }
 
 /* 
 @font-face {
