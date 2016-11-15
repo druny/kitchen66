@@ -52,6 +52,7 @@ body {
 	.bottom-menu {
 		border-top: 1px solid #011627;
 		border-bottom: 1px solid #011627;
+		border-radius: none;
 	}
 
 	&-title {
@@ -85,8 +86,10 @@ body {
 
 
 .menu-list {
-	margin: 10px 0;
+
+	margin-top: 10px;
 	.menu-item {
+		margin-top: -5px;
 		display: inline-block;
 		width: 160px;
 		border-left: 1px solid #011627;
@@ -96,12 +99,12 @@ body {
 			margin-top: -20px;
 			margin-bottom: -20px;
 			margin-right: -20px;
-			height: 60px;
+			height: 55px;
 			width: 180px;
 
 			& .item-link {
-				margin-left: -9px;
-				margin-top: 19px;
+				margin-left: -5px;
+				margin-top: 15px;
 				color: #fff;
 			}
 		}
@@ -110,6 +113,61 @@ body {
 			font-size: 14px;
 			color: #011627;
 			text-transform: uppercase;
+		}
+	}
+
+}
+
+.main-title {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 45px;
+	margin-top: 150px;
+	&-text {
+		margin: 0px auto;
+		margin-bottom: 15px;
+		padding-top: 50px;
+		width: 752px;
+		background-image: url(/img/rectangle.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		font-size: 48px;
+	}
+	b {
+		color: #011627;
+	}
+	
+}
+.main-secondary-text {
+	font-size: 36px;
+	margin: 20px 0;
+}
+.main-description {
+	text-align: left;
+	font-style: italic;
+	width: 630px;
+	margin: 0 auto;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.main-form {
+	background-color: rgba(256, 256, 256, .7);
+	text-align: center;
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px 10px;
+
+	&-title {
+		color: #011627;
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 35px;
+		margin-bottom: 15px;
+		b {
+			color: #1b9aaa;
 		}
 	}
 }

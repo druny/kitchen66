@@ -8,6 +8,7 @@
 address,dl,ol,p,ul{margin-bottom:1rem}
 caption,th{text-align:left}
 html,legend{box-sizing:border-box}
+.custom-select,input[type=search]{-webkit-appearance:none}
 button,hr,input{overflow:visible}
 pre,textarea{overflow:auto}
 .btn-group-vertical>.btn,.btn-group>.btn,.btn-group>.btn-group,.btn-toolbar .btn-group,.btn-toolbar .input-group,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.dropdown-menu,.table-reflow thead,.table-reflow tr{float:left}
@@ -79,7 +80,6 @@ table{border-collapse:collapse;background-color:transparent}
 caption{padding-top:.75rem;padding-bottom:.75rem;color:#818a91;caption-side:bottom}
 button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}
 input[type=date],input[type=time],input[type=datetime-local],input[type=month]{-webkit-appearance:listbox}
-.custom-select,input[type=search]{-webkit-appearance:none}
 fieldset{min-width:0}
 legend{color:inherit;max-width:100%;white-space:normal;display:block;width:100%}
 .btn,.dropdown-header,.dropdown-item,.input-group-btn,.table-reflow tbody,.tag{white-space:nowrap}
@@ -1016,7 +1016,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:.25rem}
 .tooltip-inner::before{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
 .popover{top:0;left:0;z-index:1060;max-width:276px;padding:1px;text-align:left;text-align:start;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:.3rem}
-.carousel-caption,.carousel-control{color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.carousel-caption,.carousel-control{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);text-align:center}
 .popover.bs-tether-element-attached-bottom,.popover.popover-top{margin-top:-10px}
 .popover.bs-tether-element-attached-bottom::after,.popover.bs-tether-element-attached-bottom::before,.popover.popover-top::after,.popover.popover-top::before{left:50%;border-bottom-width:0}
 .popover.bs-tether-element-attached-bottom::before,.popover.popover-top::before{bottom:-11px;margin-left:-11px;border-top-color:rgba(0,0,0,.25)}
@@ -1043,13 +1043,13 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .popover::after{content:"";border-width:10px}
 .carousel-inner{width:100%}
 .carousel-inner>.carousel-item{position:relative;display:none;transition:.6s ease-in-out left}
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 .carousel-inner>.carousel-item>a>img,.carousel-inner>.carousel-item>img{line-height:1}
 @media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.carousel-item{transition:transform .6s ease-in-out;backface-visibility:hidden;perspective:1000px}
 .carousel-inner>.carousel-item.active.right,.carousel-inner>.carousel-item.next{left:0;transform:translate3d(100%,0,0)}
 .carousel-inner>.carousel-item.active.left,.carousel-inner>.carousel-item.prev{left:0;transform:translate3d(-100%,0,0)}
 .carousel-inner>.carousel-item.active,.carousel-inner>.carousel-item.next.left,.carousel-inner>.carousel-item.prev.right{left:0;transform:translate3d(0,0,0)}
 }
-.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}
 .carousel-inner>.active{left:0}
 .carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}
 .carousel-inner>.next{left:100%}
@@ -1235,18 +1235,25 @@ a.text-gray-dark:focus,a.text-gray-dark:hover{color:#1f2021!important}
 .hidden-print{display:none!important}
 }
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1;font-family:'Open Sans',Sans-serif}
 blockquote,q{quotes:none}
 .header{width:100%;height:100%;background-image:url(/img/header-bg.png);background-size:cover;background-position:center}
 .header .top-menu{padding:10px 0;background-color:rgba(255,255,255,.702)}
-.header .bottom-menu{border-top:1px solid #011627;border-bottom:1px solid #011627}
+.header .bottom-menu{border-top:1px solid #011627;border-bottom:1px solid #011627;border-radius:none}
 .header-title .info{margin-top:40px;color:#011627;font-size:18px}
 .header-callback{text-align:center}
 .header-callback .phone{color:#011627;font-size:24px}
 .callback-button{background-color:#1b9aaa;color:#fff;text-transform:uppercase;font-size:16px;width:220px;height:50px;border:none}
-.menu-list{margin:10px 0}
-.menu-list .menu-item{display:inline-block;width:160px;border-left:1px solid #011627;text-align:center}
-.menu-list .menu-item:hover{background-color:#011627;margin-top:-20px;margin-bottom:-20px;margin-right:-20px;height:60px;width:180px}
-.menu-list .menu-item:hover .item-link{margin-left:-9px;margin-top:19px;color:#fff}
+.menu-list{margin-top:10px}
+.menu-list .menu-item{margin-top:-5px;display:inline-block;width:160px;border-left:1px solid #011627;text-align:center}
+.menu-list .menu-item:hover{background-color:#011627;margin-top:-20px;margin-bottom:-20px;margin-right:-20px;height:55px;width:180px}
+.menu-list .menu-item:hover .item-link{margin-left:-5px;margin-top:15px;color:#fff}
 .menu-list .menu-item .item-link{margin-left:15px;font-size:14px;color:#011627;text-transform:uppercase}
+.main-title{text-align:center;color:#fff;font-weight:700;margin-bottom:45px;margin-top:150px}
+.main-title-text{margin:0 auto 15px;padding-top:50px;width:752px;background-image:url(/img/rectangle.png);background-position:center;background-size:100% 100%;background-repeat:no-repeat;font-size:48px}
+.main-title b{color:#011627}
+.main-secondary-text{font-size:36px;margin:20px 0}
+.main-description{text-align:left;font-style:italic;width:630px;margin:0 auto 5px;font-size:18px}
+.main-form{background-color:rgba(255,255,255,.7);text-align:center;width:960px;margin:0 auto;padding:15px 10px}
+.main-form-title{color:#011627;font-weight:700;font-size:25px;line-height:35px;margin-bottom:15px}
+.main-form-title b{color:#1b9aaa}
