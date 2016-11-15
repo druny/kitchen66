@@ -4944,8 +4944,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: -100px;
-  padding-top: 200px; }
+  margin-top: 0px;
+  padding-top: 100px; }
   .header-menu {
     position: fixed;
     width: 100%;
@@ -5100,7 +5100,6 @@ body {
   background-size: cover;
   background-position: center;
   padding: 50px;
-  margin-bottom: 25px;
   text-align: center; }
   .problems-title {
     font-size: 24px;
@@ -5112,17 +5111,57 @@ body {
     border: 1px solid #fff;
     border-radius: 5px;
     height: 260px;
-    width: 340px;
+    width: 350px;
     margin-bottom: 30px;
     margin-right: 30px;
     font-size: 14px;
     color: #fff;
     line-height: 16px; }
+    .problems-item:nth-child(3n + 1) {
+      margin-right: 0; }
   .problems-img {
     display: block;
     margin: 20px auto; }
   .problems-info {
     font-weight: bold; }
+
+.answers {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  position: relative; }
+  .answers-title {
+    text-align: center;
+    font-size: 24px;
+    color: #011627;
+    margin-bottom: 30px;
+    font-weight: bold; }
+  .answers-item {
+    position: relative;
+    height: 340px;
+    border: 1px solid #011627;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 49%;
+    font-size: 14px;
+    line-height: 18px; }
+    .answers-item:nth-child(2n + 1) {
+      margin-right: 0; }
+  .answers-img {
+    margin-bottom: 15px; }
+  .answers-info {
+    font-weight: bold;
+    margin-bottom: 25px; }
+  .answers-text {
+    margin-bottom: 15px; }
+  .answers-button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    font-size: 18px; }
 
 /* 
 @font-face {

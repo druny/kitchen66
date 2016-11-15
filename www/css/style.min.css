@@ -8,7 +8,6 @@
 address,dl,ol,p,ul{margin-bottom:1rem}
 caption,th{text-align:left}
 html,legend{box-sizing:border-box}
-.custom-select,input[type=search]{-webkit-appearance:none}
 button,hr,input{overflow:visible}
 pre,textarea{overflow:auto}
 .btn-group-vertical>.btn,.btn-group>.btn,.btn-group>.btn-group,.btn-toolbar .btn-group,.btn-toolbar .input-group,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.dropdown-menu,.table-reflow thead,.table-reflow tr{float:left}
@@ -80,6 +79,7 @@ table{border-collapse:collapse;background-color:transparent}
 caption{padding-top:.75rem;padding-bottom:.75rem;color:#818a91;caption-side:bottom}
 button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}
 input[type=date],input[type=time],input[type=datetime-local],input[type=month]{-webkit-appearance:listbox}
+.custom-select,input[type=search]{-webkit-appearance:none}
 fieldset{min-width:0}
 legend{color:inherit;max-width:100%;white-space:normal;display:block;width:100%}
 .btn,.dropdown-header,.dropdown-item,.input-group-btn,.table-reflow tbody,.tag{white-space:nowrap}
@@ -1239,7 +1239,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1;font-family:'Open Sans',Sans-serif}
 blockquote,q{quotes:none}
-.header{width:100%;height:100%;background-image:url(/img/header-bg.png);background-size:cover;background-position:center;position:relative;margin-top:-100px;padding-top:200px}
+.header{width:100%;height:100%;background-image:url(/img/header-bg.png);background-size:cover;background-position:center;position:relative;margin-top:0;padding-top:100px}
 .header-menu{position:fixed;width:100%;top:0;z-index:999}
 .header .top-menu{padding:10px 0;background-color:rgba(255,255,255,.702)}
 .header .bottom-menu{border-top:1px solid #011627;border-bottom:1px solid #011627;border-radius:none}
@@ -1252,24 +1252,34 @@ blockquote,q{quotes:none}
 .menu-list .menu-item:hover .item-link{margin-left:-5px;margin-top:15px;color:#fff}
 .menu-list .menu-item .item-link{margin-left:15px;font-size:14px;color:#011627;text-transform:uppercase}
 .main-title{color:#fff;font-weight:900;margin-bottom:45px;margin-top:150px}
-.problems-info,.problems-title,.steps-text b{font-weight:700}
+.answers-info,.answers-title,.problems-info,.problems-title,.steps-text b{font-weight:700}
 .main-title-text{margin:0 auto 15px;padding-top:50px;width:70%;background-image:url(/img/rectangle.png);background-position:center;background-size:100% 100%;background-repeat:no-repeat;font-size:48px}
 .main-title b{color:#011627}
 .main-secondary-text{font-size:36px;margin:20px 0}
 .main-description{text-align:left;font-style:italic;width:57%;margin:0 auto 5px;font-size:18px}
-.main-form{background-color:rgba(255,255,255,.7);text-align:center;width:85%;margin:0 auto 100px;padding:15px 10px}
+.answers,.answers-title,.main-form,.problems,.problems-title,.steps-text{text-align:center}
+.main-form{background-color:rgba(255,255,255,.7);width:85%;margin:0 auto 100px;padding:15px 10px}
 .main-form-title{color:#011627;font-weight:700;font-size:25px;line-height:35px;margin-bottom:15px}
-.problems,.problems-title{text-align:center;margin-bottom:25px}
 .main-form-title b{color:#1b9aaa}
 .main-form-descr{font-size:14px;color:#011627;margin-top:15px}
 .main-post-form input{background:0 0;border:1px solid #1b9aaa;width:215px;height:50px;color:#1b9aaa;font-size:16px;text-align:center}
-.steps{background-color:#f2f2f2;padding:50px 0;position:relative}
+.answers,.steps{background-color:#f2f2f2}
+.steps{padding:50px 0;position:relative}
 .steps-item{border:1px solid #011627;border-radius:100px;width:165px;height:165px;margin-right:20px}
 .steps-item:last-child{margin-right:0}
 .steps-number{position:absolute;font-size:14px;z-index:2;color:#fff;left:47%}
 .steps-title{position:absolute;left:38%;top:-10px}
-.steps-text{width:100%;font-size:14px;line-height:18px;color:#1b9aaa;text-align:center;margin-top:42%}
+.steps-text{width:100%;font-size:14px;line-height:18px;color:#1b9aaa;margin-top:42%}
 .problems{background-image:url(/img/problems-bg.png);background-size:cover;background-position:center;padding:50px}
-.problems-title{font-size:24px;color:#fff}
-.problems-item{border:1px solid #fff;border-radius:5px;height:260px;width:340px;margin-bottom:30px;margin-right:30px;font-size:14px;color:#fff;line-height:16px}
+.problems-title{font-size:24px;color:#fff;margin-bottom:25px}
+.problems-item{border:1px solid #fff;border-radius:5px;height:260px;width:350px;margin-bottom:30px;margin-right:30px;font-size:14px;color:#fff;line-height:16px}
+.problems-item:nth-child(3n+1){margin-right:0}
 .problems-img{display:block;margin:20px auto}
+.answers{padding:30px;position:relative}
+.answers-title{font-size:24px;color:#011627;margin-bottom:30px}
+.answers-item{position:relative;height:340px;border:1px solid #011627;border-radius:5px;padding:20px;margin-right:20px;margin-bottom:30px;width:49%;font-size:14px;line-height:18px}
+.answers-item:nth-child(2n+1){margin-right:0}
+.answers-img{margin-bottom:15px}
+.answers-info{margin-bottom:25px}
+.answers-text{margin-bottom:15px}
+.answers-button{position:absolute;bottom:20px;left:0;width:100%;font-size:18px}
