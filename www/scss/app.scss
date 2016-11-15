@@ -44,7 +44,15 @@ body {
 	background-image: url(/img/header-bg.png);
 	background-size: cover;
 	background-position: center;
-
+	position: relative;
+	margin-top: -100px;
+	padding-top: 200px;
+	&-menu {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 999;
+	}
 	.top-menu {
 		padding: 10px 0;
 		background-color: rgba(255, 255, 255, .702);
@@ -60,6 +68,7 @@ body {
 			margin-top: 40px;
 			color: #011627;
 			font-size: 18px;
+			text-align: center;
 		}
 	}
 	&-callback {
@@ -147,7 +156,7 @@ body {
 .main-description {
 	text-align: left;
 	font-style: italic;
-	width: 630px;
+	width: 57%;
 	margin: 0 auto;
 	font-size: 18px;
 	margin-bottom: 5px;
