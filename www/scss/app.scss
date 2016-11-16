@@ -326,3 +326,36 @@ body {
 		font-size: 18px;
 	}
 }
+
+.secondary-form {
+	.main-form {
+		
+		& .callback-button {
+			width: 290px;
+		}
+	}
+	.main-post-form input {
+		width: 290px;
+		margin-right: 20px;
+	}
+}
+
+.secondary-form-bg {
+	background-color: #011627;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: center;
+
+	.main-form {
+		background-color: rgba(256, 256, 256, 0);
+		margin: 0;
+		&-title {
+			color: #fff;
+			margin-bottom: 25px;
+		}
+		&-descr {
+			color: #fff;
+			margin-top: 25px;
+		}
+	}
+}

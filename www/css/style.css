@@ -5163,6 +5163,28 @@ body {
     width: 100%;
     font-size: 18px; }
 
+.secondary-form .main-form .callback-button {
+  width: 290px; }
+
+.secondary-form .main-post-form input {
+  width: 290px;
+  margin-right: 20px; }
+
+.secondary-form-bg {
+  background-color: #011627;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: center; }
+  .secondary-form-bg .main-form {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0; }
+    .secondary-form-bg .main-form-title {
+      color: #fff;
+      margin-bottom: 25px; }
+    .secondary-form-bg .main-form-descr {
+      color: #fff;
+      margin-top: 25px; }
+
 /* 
 @font-face {
 	font-family: Casper;

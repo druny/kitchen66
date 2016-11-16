@@ -1257,7 +1257,7 @@ blockquote,q{quotes:none}
 .main-title b{color:#011627}
 .main-secondary-text{font-size:36px;margin:20px 0}
 .main-description{text-align:left;font-style:italic;width:57%;margin:0 auto 5px;font-size:18px}
-.answers,.answers-title,.main-form,.problems,.problems-title,.steps-text{text-align:center}
+.answers,.answers-title,.main-form,.problems,.problems-title,.secondary-form-bg,.steps-text{text-align:center}
 .main-form{background-color:rgba(255,255,255,.7);width:85%;margin:0 auto 100px;padding:15px 10px}
 .main-form-title{color:#011627;font-weight:700;font-size:25px;line-height:35px;margin-bottom:15px}
 .main-form-title b{color:#1b9aaa}
@@ -1283,3 +1283,9 @@ blockquote,q{quotes:none}
 .answers-info{margin-bottom:25px}
 .answers-text{margin-bottom:15px}
 .answers-button{position:absolute;bottom:20px;left:0;width:100%;font-size:18px}
+.secondary-form .main-form .callback-button{width:290px}
+.secondary-form .main-post-form input{width:290px;margin-right:20px}
+.secondary-form-bg{background-color:#011627;padding-top:40px;padding-bottom:60px}
+.secondary-form-bg .main-form{background-color:rgba(255,255,255,0);margin:0}
+.secondary-form-bg .main-form-title{color:#fff;margin-bottom:25px}
+.secondary-form-bg .main-form-descr{color:#fff;margin-top:25px}
