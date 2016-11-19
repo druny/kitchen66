@@ -5259,6 +5259,48 @@ body {
     top: 210px;
     right: 653px; }
 
+#owl-demo .slider img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.cities {
+  background-image: url(/img/map-bg.png);
+  background-color: #f2f2f2;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 380px;
+  padding-top: 45px; }
+  .cities-title {
+    text-align: center;
+    font-size: 25px;
+    color: #011627;
+    font-weight: bold; }
+
+.team {
+  background-image: url(/img/team-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 45px 0; }
+  .team-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px; }
+  .team-item {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold; }
+    .team-item-title {
+      color: #fff; }
+    .team-item-descr {
+      color: #1b9aaa;
+      font-style: italic; }
+
 /* 
 @font-face {
 	font-family: Casper;
