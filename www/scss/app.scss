@@ -388,6 +388,11 @@ body {
 			border: 3px solid #269eae;
 		}
 	}
+
+	&-slider {
+		margin: 50px 0;
+		border: 3px solid #011627;
+	}
 }
 .constitutes {
 	position: absolute;
@@ -470,11 +475,7 @@ body {
 
 }
 
-#owl-demo .slider img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 
 .cities {
 	background-image: url(/img/map-bg.png);
@@ -512,6 +513,7 @@ body {
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: bold;
+		height: 310px;
 		&-title {
 			color: #fff;
 		}
@@ -519,5 +521,58 @@ body {
 			color: #1b9aaa;
 			font-style: italic;
 		}
+	}
+}
+
+.contacts {
+	padding-top: 45px;
+	padding-bottom: 30px;
+	background-color: #f2f2f2;
+	color: #011627;
+	text-align: center;
+	&-title {
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	&-descr {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+}
+
+.map {
+	border-top: 3px solid #011627;
+}
+
+.footer {
+	background-color: #011627;
+	padding-top: 30px;
+	
+
+	&-title {
+		.info {
+			color: #fff;
+		}
+	}
+	&-callback {
+		margin-bottom: 50px;
+		.phone {
+			color: #fff;
+		}
+	}
+	
+	&-bottom {
+		border-top: 3px solid #808b93;
+		padding: 5px 0;
+	}
+	.additional {
+		text-align: center;
+		color: #808b93;
+		b {
+			font-weight: bold;
+		}
+		
 	}
 }

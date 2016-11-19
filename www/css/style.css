@@ -5207,6 +5207,9 @@ body {
     margin-bottom: 320px; }
     .details-img img {
       border: 3px solid #269eae; }
+  .details-slider {
+    margin: 50px 0;
+    border: 3px solid #011627; }
 
 .constitutes {
   position: absolute;
@@ -5259,11 +5262,6 @@ body {
     top: 210px;
     right: 653px; }
 
-#owl-demo .slider img {
-  display: block;
-  width: 100%;
-  height: auto; }
-
 .cities {
   background-image: url(/img/map-bg.png);
   background-color: #f2f2f2;
@@ -5294,13 +5292,54 @@ body {
     text-align: center;
     font-size: 14px;
     line-height: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    height: 310px; }
     .team-item-title {
       color: #fff; }
     .team-item-descr {
       color: #1b9aaa;
       font-style: italic; }
 
+.contacts {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background-color: #f2f2f2;
+  color: #011627;
+  text-align: center; }
+  .contacts-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .contacts-descr {
+    font-size: 18px;
+    margin-bottom: 5px; }
+
+.map {
+  border-top: 3px solid #011627; }
+
+.footer {
+  background-color: #011627;
+  padding-top: 30px; }
+  .footer-title .info {
+    color: #fff; }
+  .footer-callback {
+    margin-bottom: 50px; }
+    .footer-callback .phone {
+      color: #fff; }
+  .footer-bottom {
+    border-top: 3px solid #808b93;
+    padding: 5px 0; }
+  .footer .additional {
+    text-align: center;
+    color: #808b93; }
+    .footer .additional b {
+      font-weight: bold; }
+
+/* @media(max-width: 2565px, min-width: 2500px) {
+	
+	
+} */
 /* 
 @font-face {
 	font-family: Casper;

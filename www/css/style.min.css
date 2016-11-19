@@ -1291,16 +1291,17 @@ blockquote,q{quotes:none}
 .secondary-form .main-post-form input{width:290px;margin-right:20px}
 .secondary-form-bg{background-color:#011627;padding-top:40px;padding-bottom:60px}
 .secondary-form-bg .main-form{background-color:rgba(255,255,255,0);margin:0}
-.cities,.details{background-color:#f2f2f2}
+.cities,.contacts,.details{background-color:#f2f2f2}
 .secondary-form-bg .main-form-title{color:#fff;margin-bottom:25px}
 .secondary-form-bg .main-form-descr{color:#fff;margin-top:25px}
 .details{position:relative}
 .constitutes,.constitutes-line{position:absolute}
 .details-title{font-size:24px;text-align:center;padding-top:40px;margin-bottom:5px}
-.constitutes,.details-descr{text-transform:uppercase;font-size:18px;color:#011627;text-align:center}
+.constitutes,.details-descr{font-size:18px;color:#011627;text-transform:uppercase;text-align:center}
 .details-descr{margin-bottom:25px}
 .details-img{text-align:center;margin-bottom:320px}
 .details-img img{border:3px solid #269eae}
+.details-slider{margin:50px 0;border:3px solid #011627}
 .constitutes-title{font-weight:700;margin:5px 0}
 .constitutes-descr{font-size:14px;margin-bottom:5px}
 .constitutes:nth-of-type(1){top:160px;left:470px}
@@ -1315,11 +1316,20 @@ blockquote,q{quotes:none}
 .constitutes-line:nth-of-type(4){top:280px;right:860px}
 .constitutes-line:nth-of-type(5){top:250px;right:650px}
 .constitutes-line:nth-of-type(6){top:210px;right:653px}
-#owl-demo .slider img{display:block;width:100%;height:auto}
 .cities{background-image:url(/img/map-bg.png);background-size:contain;height:380px;padding-top:45px}
 .cities-title{text-align:center;font-size:25px;color:#011627;font-weight:700}
 .team{background-image:url(/img/team-bg.png);background-size:100% 100%;padding:45px 0}
 .team-title{font-size:24px;font-weight:700;text-align:center;color:#fff;margin-bottom:40px}
-.team-item{text-align:center;font-size:14px;line-height:18px;font-weight:700}
+.team-item{text-align:center;font-size:14px;line-height:18px;font-weight:700;height:310px}
 .team-item-title{color:#fff}
 .team-item-descr{color:#1b9aaa;font-style:italic}
+.contacts{padding-top:45px;padding-bottom:30px;color:#011627;text-align:center}
+.footer-callback .phone,.footer-title .info{color:#fff}
+.contacts-title{text-transform:uppercase;font-size:25px;font-weight:700;margin-bottom:20px}
+.contacts-descr{font-size:18px;margin-bottom:5px}
+.map{border-top:3px solid #011627}
+.footer{background-color:#011627;padding-top:30px}
+.footer-callback{margin-bottom:50px}
+.footer-bottom{border-top:3px solid #808b93;padding:5px 0}
+.footer .additional{text-align:center;color:#808b93}
+.footer .additional b{font-weight:700}
